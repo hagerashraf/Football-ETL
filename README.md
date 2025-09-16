@@ -3,9 +3,9 @@ The pipeline extracts raw data from Excel files, performs data cleaning and qual
 It also creates analytical views for performance monitoring and strategic insights.
 
 
-#ETL Workflow:
+# ETL Workflow:
 
-##Extraction
+## Extraction
 
 Source data extracted from multiple Excel files.
 
