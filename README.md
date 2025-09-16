@@ -11,7 +11,7 @@ Source data extracted from multiple Excel files.
 
 Python (pandas) used for reading and preprocessing.
 
-##Transformation & Cleaning
+## Transformation & Cleaning
 
 Data validation (PK/FK checks, required fields, data types).
 
@@ -19,7 +19,7 @@ Error handling and logging into dedicated error tables.
 
 Cleansing of inconsistent or invalid records.
 
-##Loading
+## Loading
 
 Data loaded into SQL Server tables using pyodbc.
 
@@ -27,7 +27,7 @@ Identity inserts and foreign key constraints handled during load.
 
 Denormalized views created for analysis.
 
-##Logging & Reporting
+## Logging & Reporting
 
 Log file tracks:
 
@@ -35,23 +35,23 @@ Number of rows extracted, transformed, and inserted.
 
 Errors and mismatches.
 
-##Scheduling
+## Scheduling
 
 ETL can be automated with Task Scheduler for regular runs.
 
-#Database Schema
+## Database Schema
 
 The pipeline populates the following core tables:
 
-*Teams – Team information, stadium, city, manager.
+# Teams – Team information, stadium, city, manager.
 
-*Players – Player details, nationality, contract, market value.
+# Players – Player details, nationality, contract, market value.
 
-*Matches – Match results, scores, referees, stadium.
+# Matches – Match results, scores, referees, stadium.
 
-*PlayerStats – Match statistics (goals, assists, cards, minutes).
+# PlayerStats – Match statistics (goals, assists, cards, minutes).
 
-*TransferHistory – Player transfers, fees, and contract details.
+# TransferHistory – Player transfers, fees, and contract details.
 
 Additionally, a player performance view was created with:
 
@@ -63,13 +63,13 @@ Estimated matches played.
 
 Country-specific indicators (played in France, Germany, etc.).
 
-#Tech Stack
+# Tech Stack
 
-##Python – ETL orchestration (pandas, pyodbc, logging).
+## Python – ETL orchestration (pandas, pyodbc, logging).
 
-##SQL Server – Database & views.
+## SQL Server – Database & views.
 
-##Excel – Source data files.
+## Excel – Source data files.
 
 Project Structure
 ├── etl_pipeline.py        # Main ETL script
@@ -80,12 +80,12 @@ Project Structure
 
 Key Features:
 
-#Automated ETL process (extract → transform → load).
+# Automated ETL process (extract → transform → load).
 
-#Full data validation (PK/FK integrity, required fields).
+# Full data validation (PK/FK integrity, required fields).
 
-#Error tracking in SQL tables + logging.
+# Error tracking in SQL tables + logging.
 
-#Denormalized views for analytics.
+# Denormalized views for analytics.
 
-#Scalable design with partitioning & indexing recommendations.
+# Scalable design with partitioning & indexing recommendations.
