@@ -527,9 +527,8 @@ if __name__ == "__main__":
         DRIVER={SQL Server};
         SERVER=DESKTOP-2D9D3TL;
         DATABASE=Final;
-        Trusted_Connection=yes
-        UID=WW930/a922511;
-        PWD=Abdulrahman187*;
+        Trusted_Connection=yes;
+        
     """
     
     etl = FootballETL(excel_file, connection_string)
